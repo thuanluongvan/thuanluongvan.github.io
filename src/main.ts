@@ -1,13 +1,15 @@
 import van from "vanjs-core"
+import './styles/common.css'
+import Header from "./components/header"
+import Nav from "./components/nav"
+import Content from "./components/content"
 
-const {a, div, li, p, ul} = van.tags
+const { div } = van.tags
 
-const Hello = () => div(
-  p("👋Hello"),
-  ul(
-    li("🗺️World"),
-    li(a({href: "https://vanjs.org/"}, "🍦VanJS")),
-  ),
+const Main = () => div(
+    Header,
+    Nav,
+    Content
 )
 
-van.add(document.body, Hello())
+van.add(document.body, Main())

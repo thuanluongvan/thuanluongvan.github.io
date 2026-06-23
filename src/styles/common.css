@@ -1,0 +1,29 @@
+:root {
+    --color-primary: #112E81;
+    --color-secondary: #4382DF;
+    --color-background: #4647AE;
+
+    --color-border: var(--color-primary);
+
+    --font-family: "Bitcount Prop Single", system-ui;
+}
+
+body {
+    background: var(--color-background);
+    color: var(--color-primary);
+}
+
+/* layout */
+body>div {
+    margin: 5%;
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 1.5rem;
+}
+
+/* responsive */
+@media (width < 768px) {
+    body>div {
+        grid-template-columns: 1fr;
+    }
+}
