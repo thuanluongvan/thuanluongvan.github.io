@@ -1,17 +1,118 @@
 ---
-
+// console.log("Hello world");
 ---
 
+<style>
+  body {
+    background-color: #161616;
+    color: #a1a1aa;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+
+    * {
+      margin: 0;
+    }
+
+    > * {
+      margin: 0 auto;
+      width: 60%;
+    }
+
+    a {
+      text-decoration: none;
+      color: #8ab4f8;
+    }
+
+    main {
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        color: #f2f2f2;
+      }
+
+      h2 {
+        font-size: 4rem;
+      }
+
+      section {
+        display: flex;
+        gap: 50px;
+      }
+    }
+  }
+</style>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Hi, I'm Thuan</title>
+  </head>
+  <body>
+    <header style="margin-bottom: 5rem;">
+      <nav style="display: flex; justify-content: space-between;">
+        <h1 style="font-size: 1rem;">thuanluong</h1>
+      </nav>
+    </header>
+    <main style="display: flex; flex-flow: column; gap: 5rem;">
+      <section>
+        <div
+          style="display: flex; flex-flow: column; align-items: start; gap: 0.5rem;"
+        >
+          <h2>Hi, I'm Thuan</h2>
+          <p>Software developer. Minimalism enthusiast.</p>
+          <p>
+            You can contact me at <span
+              style="font-style: italic; color: #8ab4f8;"
+              >thuanluongvan.dev@gmail.com</span
+            >
+          </p>
+          <div style="display: flex; gap: 20px;">
+            <a
+              href="https://docs.google.com/document/d/1jiglMN_aYlymbF-CSgSwSq9YCGVeh_CxNdEqUEkrQAU/edit?usp=sharing"
+              target="_blank">My CV</a
+            >
+            <a href="mailto:thuanluongvan.dev@gmail.com">Say hi</a>
+          </div>
+        </div>
+        <img
+          src="/images/portrait.jpg"
+          alt="Portrait"
+          width="150"
+          height="auto"
+          style="border-radius: 0.5rem;"
+        />
+      </section>
+
+      <section style="flex-flow: column;">
+        <h2>Projects</h2>
+        <ul>
+          <li>
+            <a href="https://wordpress.org/plugins/yaymail/" target="_blank"
+              >YayMail</a
+            >: Wordpress Woocommerce Advanced Email Customize
+          </li>
+          <li>
+            <a href="https://wpbookster.com" target="_blank">Bookster</a>:
+            WordPress Appointment Booking Plugin
+          </li>
+          <li style="font-style: italic;">
+            I'm also working on somethings plain and nice, will be updated
+            soon...
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
 </html>
