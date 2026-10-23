@@ -43,6 +43,12 @@
       }
     }
   }
+
+  @media (max-width: 768px) {
+    .hero {
+      flex-flow: column-reverse;
+    }
+  }
 </style>
 <html lang="en">
   <head>
@@ -66,7 +72,7 @@
       </nav>
     </header>
     <main style="display: flex; flex-flow: column; gap: 5rem;">
-      <section>
+      <section class="hero" style="display: flex; align-items: flex-start;">
         <div
           style="display: flex; flex-flow: column; align-items: start; gap: 0.5rem;"
         >
@@ -89,9 +95,7 @@
         <img
           src="/images/portrait.jpg"
           alt="Portrait"
-          width="150"
-          height="auto"
-          style="border-radius: 0.5rem;"
+          style="max-width: 150px; border-radius: 0.5rem;"
         />
       </section>
 
